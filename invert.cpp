@@ -11,6 +11,7 @@ int main(){
     for(int row = 0; row < h; row++) {
         for(int col = 0; col < w; col++) {
             out[row][col] = abs(255 - img[row][col]);
+            cout << img[row][col] << endl;
         }
     }
     
