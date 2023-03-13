@@ -12,6 +12,8 @@ int main(){
         for(int col = 0; col < w; col++) {
             if(col > w/2){
                 out[row][col] = abs(255 - img[row][col]);
+            }else{
+                out[row][col] = img[row][col];
             }
         }
     }
