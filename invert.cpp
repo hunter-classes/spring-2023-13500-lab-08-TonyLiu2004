@@ -7,7 +7,6 @@ int main(){
     int h, w;
     readImage(input, img, h, w);
 
-    cout << "ran" << endl;
     int out[MAX_H][MAX_W];
     for(int row = 0; row < h; row++) {
         for(int col = 0; col < w; col++) {
