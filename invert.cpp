@@ -7,11 +7,12 @@ int main(){
     int h, w;
     readImage(input, img, h, w);
 
+    cout << "ran" << endl;
     int out[MAX_H][MAX_W];
     for(int row = 0; row < h; row++) {
         for(int col = 0; col < w; col++) {
             out[row][col] = abs(255 - img[row][col]);
-            cout << img[row][col] << endl;
+            cout << img[row][col] << " " << abs(255 - img[row][col]) << endl;
         }
     }
     
